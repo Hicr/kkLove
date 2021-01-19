@@ -1,2 +1,2 @@
 # kkLove
-weixinprogram
+给小李制作一个微信小程序用来搞异地恋爱记录
