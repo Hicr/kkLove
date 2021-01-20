@@ -1,0 +1,6 @@
+<view>
+	<text class="title">hello kk</text>
+	<text>{{ name }} </text>
+	<text> 现在时间：{{ now }} </text>
+	<button bind:tap="buttonHandler">点击</button>
+</view>

@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/my/my",
+    "pages/wish/wish",
+    "pages/letter/letter"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#6699CC",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小李同学"    
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/wish/wish",
+      "text": "心愿清单"
+    },{
+      "pagePath":"pages/letter/letter",
+      "text":"我们的信"
+    },{
+      "pagePath":"pages/my/my",
+      "text":"我的"
+    }]
+  },
+  "usingComponents": {
+    "i-tab-bar": "../../dist/tab-bar/index",
+    "i-tab-bar-item": "../../dist/tab-bar-item/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

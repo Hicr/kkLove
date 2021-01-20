@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/my/my",
+    "pages/wish/wish",
+    "pages/letter/letter"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#6699CC",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小李同学"    
+  },
+  "sitemapLocation": "sitemap.json"
+}
