@@ -1,7 +1,1 @@
-<view>
-	<text class="title">hello kk</text>
-	<text>{{ name }} </text>
-	<text> 现在时间：{{ now }} </text>
-	<button bind:tap="buttonHandler">点击</button>
-	<i-button type="primary" bind:click="handleClick">这是一个按钮</i-button>
-</view>
+my home

@@ -2,16 +2,6 @@
 
 # Created by https://www.gitignore.io/api/maven,eclipse,intellij
 
-### devops-web ###
-devops-web/node_modules/
-devops-web/dist/
-devops-web/package-lock.json
-devops-web/vue.config.js
-
-### devops-cli ###
-devops-cli/node_modules/
-devops-cli/dist/
-devops-cli/package-lock.json
 
 ### VSCode Editor ###
 .vscode/

@@ -1,9 +1,10 @@
 Page({
     data: {
-        current: 'homepage'
+        current: 'home'
     },
 
     handleChange ({ detail }) {
+        console.log(detail.key)
         this.setData({
             current: detail.key
         });

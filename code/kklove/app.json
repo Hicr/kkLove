@@ -11,20 +11,5 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "小李同学"    
   },
-  "tabBar": {
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/wish/wish",
-      "text": "心愿清单"
-    },{
-      "pagePath":"pages/letter/letter",
-      "text":"我们的信"
-    },{
-      "pagePath":"pages/my/my",
-      "text":"我的"
-    }]
-  },
   "sitemapLocation": "sitemap.json"
 }
