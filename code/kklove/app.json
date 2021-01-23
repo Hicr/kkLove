@@ -9,7 +9,13 @@
   "window":{
     "navigationBarBackgroundColor": "#6699CC",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "小李同学"    
+    "navigationBarTitleText": "李小臭"    
+  },
+  "usingComponents": {
+    "i-button": "../../dist/button/index",
+    "i-notice-bar": "../../dist/notice-bar/index",
+    "i-tab-bar": "../../dist/tab-bar/index",
+    "i-tab-bar-item": "../../dist/tab-bar-item/index"
   },
   "sitemapLocation": "sitemap.json"
 }

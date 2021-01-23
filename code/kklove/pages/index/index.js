@@ -40,6 +40,7 @@ Page({
       },
     handleChange ({ detail }) {
         console.log(detail.key)
+        // console.log(getCurrentPages())
         this.setData({
             current: detail.key
         });
