@@ -1,0 +1,3 @@
+.itabbarwxss{
+  padding-bottom:calc(25rpx + env(safe-area-inset-bottom))  
+}

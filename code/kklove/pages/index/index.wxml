@@ -11,9 +11,9 @@
     <commy/>
 </view>
 
-<i-tab-bar current="{{ current }}" bindchange="handleChange" fixed>
-    <i-tab-bar-item key="home" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
-    <i-tab-bar-item key="wish" icon="like" current-icon="like_fill" title="心愿清单"></i-tab-bar-item>
-    <i-tab-bar-item key="letter" icon="mail" current-icon="mail_fill"  title="我们的信"></i-tab-bar-item>
-    <i-tab-bar-item key="my" icon="mine" current-icon="mine_fill"  title="我的"></i-tab-bar-item>
+<i-tab-bar  current="{{ current }}" bindchange="handleChange" fixed>
+    <i-tab-bar-item i-class="itabbarwxss" key="home" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item i-class="itabbarwxss" key="wish" icon="like" current-icon="like_fill" title="心愿清单"></i-tab-bar-item>
+    <i-tab-bar-item i-class="itabbarwxss" key="letter" icon="mail" current-icon="mail_fill"  title="我们的信"></i-tab-bar-item>
+    <i-tab-bar-item i-class="itabbarwxss" key="my" icon="mine" current-icon="mine_fill"  title="我的"></i-tab-bar-item>
 </i-tab-bar>
