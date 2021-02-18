@@ -9,20 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>kk-api</artifactId>
-
+    <artifactId>kk-service</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.wangcr</groupId>
             <artifactId>kk-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.wangcr</groupId>
-            <artifactId>kk-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
+    </dependencies>
 
 </project>
