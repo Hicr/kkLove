@@ -2,9 +2,7 @@
 
 ## 待做TODO
 
-集成Swagger接口文档功能
 
-集成log功能
 
 ## 框架结构说明
 
@@ -12,7 +10,7 @@
 
 - kk-common // 公共方法
 
-- kk-dao // 数据处理层
+- kk-service // 数据处理层
 
 - kk-web // springboot启动
 
@@ -34,6 +32,7 @@
     - v2.9.2 
       
     - http://localhost:8081/swagger-ui.html
+    - https://www.cnblogs.com/swzx-1213/p/12736993.html
 
 - Lof4j2 //TODO  上线记得修改日志的路径位置
 
@@ -41,3 +40,9 @@
 ## SpringBoot 笔记
 
 - controller层一定要在启动类的下层
+
+## 相关地址
+
+- http://localhost:8081/user/test
+
+- http://localhost:8081/swagger-ui.html
