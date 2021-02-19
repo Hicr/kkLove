@@ -1,4 +1,4 @@
-import { postRequest } from "./util/request.js"
+import { postRequest,getRequest } from "./util/request.js"
 import { api } from "./util/api.js"
 
 App({
@@ -7,17 +7,18 @@ App({
     wx.login({
       success: res => {
         if(res.code) {
-          wx.request({
-            url: 'http://localhost:8081/wx/login',
-            data:{
-              code: res.code
-            },
-            success: function(res){
-              if(res.statusCode === 200){
-                console.log(res.data.sessionId)//服务器回包内容
+          console.log("获取到用户code:"+res.code)
+          getRequest(api.loginApi+"?code="+res.code).then(
+            result => {
+              if(result.statusCode === 200){
+                console.log("获取到openid")
+                console.log(result)
+              }else{
+                console.log("登陆用户信息获取失败，请管理员检查")
+                console.log(result)
               }
             }
-          })
+          )
         }else{
           console.log('获取用户登录状态失败！'+ res.errMsg)
         }

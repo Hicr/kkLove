@@ -53,3 +53,9 @@
 - http://localhost:8081/swagger-ui.html
 - [微信小程序登陆 博文1](https://blog.csdn.net/sxl131415/article/details/80427999)
 - [微信小程序登陆 博文2](https://blog.csdn.net/it_most/article/details/109696247)
+
+## 异常代码
+
+- 400 默认错误
+- 401 权限错误
+- 404 找不到
