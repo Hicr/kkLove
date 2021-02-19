@@ -34,6 +34,8 @@
                     <!-- 指定该Main Class为全局的唯一入口 -->
                     <mainClass>com.wangcr.kk.web.KKWebApplication</mainClass>
                     <layout>ZIP</layout>
+                    <fork>true</fork>
+                    <addResources>true</addResources>
                 </configuration>
                 <executions>
                     <execution>

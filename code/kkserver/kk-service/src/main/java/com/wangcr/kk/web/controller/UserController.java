@@ -24,12 +24,7 @@ public class UserController {
         return "hello";
     }
 
-    @RequestMapping("qqq")
-    @ResponseBody
-    public String getUserByName(){
-        User user_result = userService.getUserByName("wangcr");
-        return user_result.toString();
-    }
+
     @GetMapping("test")
     public String test() {
         User user_result = userService.getUserByName("wangcr");
