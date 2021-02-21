@@ -17,4 +17,8 @@ public interface LoginService {
      * @return
      */
     public Map WxLogin(String openId);
+
+
+
+
 }
