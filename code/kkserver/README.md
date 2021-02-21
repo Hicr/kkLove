@@ -2,7 +2,7 @@
 
 ## 小程序后端功能简要说明
 
-- 登陆功能
+- 登陆功能说明
 > 登陆流程：
 > 
 >   先从微信处获取code，用该code来调用我们后端的服务：
@@ -15,8 +15,6 @@
 - 
 
 ## 待做TODO
-
-// 密码加密
 
 
 ## 框架结构说明
@@ -43,6 +41,10 @@
 >
 > ciphers: TLS_ECDHE_RSA_WITAES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA
 
+- 邮件系统
+
+- 手机短信系统
+
 ## 框架
 
 - Maven
@@ -58,10 +60,11 @@
 - http连接：RestTemplate Spring提供
   - [调用微信接口](https://blog.csdn.net/u013469944/article/details/84193792)
   - [RestTemplate 调用方式](https://www.cnblogs.com/wzk-0000/p/10955406.html)
+- JWT TOKEN
 ## SpringBoot 笔记
 
 - controller层一定要在启动类的下层
-
+- 过滤器在启动类上只标注到包就可以
 ## 相关地址
 
 - http://localhost:8081/user/test

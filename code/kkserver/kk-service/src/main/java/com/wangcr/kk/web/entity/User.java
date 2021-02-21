@@ -17,4 +17,6 @@ public class User {
 
     private String updatedate;
 
+    private String sessionkey;
+
 }

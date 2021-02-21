@@ -1,5 +1,6 @@
 package com.wangcr.kk.web.controller;
 
+import com.wangcr.kk.common.ResultList;
 import com.wangcr.kk.web.entity.LoginUser;
 import com.wangcr.kk.web.service.LoginService;
 import com.wangcr.kk.web.service.TokenService;
@@ -23,21 +24,45 @@ public class LoginController {
     @Autowired
     private LoginService login;
 
+    /**
+     * 查询微信用户信息
+     * @param code
+     * @return
+     * @throws Exception
+     */
     @ApiOperation(value = "查询微信用户信息", response = Map.class)
     @RequestMapping(value = "wxuser", method = RequestMethod.GET)
-    public Map loginUserInfo(@ApiParam("code") String code)throws Exception{
+    public ResultList loginUserInfo(@ApiParam("code") String code)throws Exception{
         return login.WxUserInfo(code);
     }
 
 
+    /**
+     * 登陆接口
+     * @param code
+     * @return
+     */
     @ApiOperation(value = "微信登陆" , response = Map.class)
     @RequestMapping(value = "login", method = RequestMethod.GET)
-    public Map loginController(@ApiParam("openId") String openId){
+    public ResultList loginController(@ApiParam("code") String code){
+        return null;
+    }
+
+    /**
+     * 使用用户名密码登陆
+     * @param username
+     * @param password
+     * @return
+     */
+    @ApiOperation(value = "微信登陆" , response = Map.class)
+    @RequestMapping(value = "loginbyuser", method = RequestMethod.GET)
+    public ResultList loginbyuserController(@ApiParam("username") String username,
+                                      @ApiParam("password") String password){
         return null;
     }
 
 
-
+    //START===================测试过滤器模拟方法============================================================/
     static Map<Integer, LoginUser> userMap = new HashMap<>();
 
     static {
@@ -70,7 +95,7 @@ public class LoginController {
         return "";
     }
 
-
+    //END==============================================================================================/
 
 
 }

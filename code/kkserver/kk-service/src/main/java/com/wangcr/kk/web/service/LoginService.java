@@ -1,5 +1,7 @@
 package com.wangcr.kk.web.service;
 
+import com.wangcr.kk.common.ResultList;
+
 import java.util.Map;
 
 public interface LoginService {
@@ -9,16 +11,23 @@ public interface LoginService {
      * @param code
      * @return
      */
-    public Map WxUserInfo(String code) throws Exception;
+    public ResultList WxUserInfo(String code) throws Exception;
 
     /**
      * 根据微信用户的openId来进行登陆小程序后端应用
-     * @param openId
+     * @param code
      * @return
      */
-    public Map WxLogin(String openId);
+    public ResultList WxLogin(String code) throws Exception;
 
-
+    /**
+     * 使用用户名密码登陆
+     * @param username
+     * @param password
+     * @return
+     * @throws Exception
+     */
+    public ResultList WxloginByUser(String username, String password) throws Exception;
 
 
 }
