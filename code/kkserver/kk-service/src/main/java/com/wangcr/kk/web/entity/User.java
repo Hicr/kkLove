@@ -11,6 +11,8 @@ public class User {
 
     private String password;
 
+    private String openid;
+
     private String createdate;
 
     private String updatedate;

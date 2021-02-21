@@ -1,5 +1,9 @@
 package com.wangcr.kk.web.config;
 
+/**
+ * @author wwangcr
+ * 小程序开发者用户信息
+ */
 public enum WxConfig {
 
     WxDevAppId("appid","wx4049881a8ccb0781"),

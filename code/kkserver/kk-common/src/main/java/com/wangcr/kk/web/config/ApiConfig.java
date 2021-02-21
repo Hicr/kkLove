@@ -25,19 +25,6 @@ import java.util.List;
 @Configuration
 public class ApiConfig {
 
-// v1.0
-//    @Bean
-//    public RestTemplate restTemplate(ClientHttpRequestFactory factory) {
-//        return new RestTemplate(factory);
-//    }
-//
-//    @Bean
-//    public ClientHttpRequestFactory simpleClientHttpRequestFactory() {
-//        SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();//默认的是JDK提供http连接，需要的话可以//通过setRequestFactory方法替换为例如Apache HttpComponents、Netty或//OkHttp等其它HTTP library。
-//        factory.setReadTimeout(5000);//单位为ms
-//        factory.setConnectTimeout(5000);//单位为ms
-//        return factory;
-//    }
     @Autowired
     private RestTemplateBuilder builder;
 
