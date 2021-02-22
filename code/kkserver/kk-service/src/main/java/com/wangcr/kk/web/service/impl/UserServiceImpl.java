@@ -4,9 +4,13 @@ import com.wangcr.kk.web.dao.UserDao;
 import com.wangcr.kk.web.entity.User;
 import com.wangcr.kk.web.mapper.UserMapper;
 import com.wangcr.kk.web.service.UserService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author wangcr
+ */
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -15,9 +19,33 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
 
-
-    public User getUserByName(String username){
-        log.info("触发logger");
+    @Override
+    public User getUserByNameService(String username){
+        log.info("查询用户信息getUserByNameService");
         return userMapper.getUserByName(username);
     }
+
+    @Override
+    public User getUserByOpenIdSerivce(String openid) {
+        if(StringUtils.isNotBlank(openid)){
+            log.info("查询用户信息getUserByOpenIdSerivce");
+            return userMapper.getUserByOpenId(openid);
+        }else {
+            log.error("查询用户信息getUserByOpenIdSerivce:openid is null");
+            return null;
+        }
+    }
+
+    @Override
+    public Integer isExistUserService(String openid) {
+        if (StringUtils.isNotBlank(openid)) {
+            log.info("查询用户信息isExistUserService");
+            return userMapper.isExistUser(openid);
+        }else {
+            log.error("查询用户信息getUserByOpenIdSerivce:openid is null");
+            return null;
+        }
+    }
+
+
 }
