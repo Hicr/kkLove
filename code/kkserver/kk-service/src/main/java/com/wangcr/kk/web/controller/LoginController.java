@@ -15,6 +15,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
+
+
+
+
 @Slf4j
 @Api("微信登陆接口")
 @RestController
@@ -25,27 +29,14 @@ public class LoginController {
     private LoginService login;
 
     /**
-     * 查询微信用户信息
-     * @param code
-     * @return
-     * @throws Exception
-     */
-    @ApiOperation(value = "查询微信用户信息", response = Map.class)
-    @RequestMapping(value = "wxuser", method = RequestMethod.GET)
-    public ResultList loginUserInfo(@ApiParam("code") String code)throws Exception{
-        return login.WxUserInfo(code);
-    }
-
-
-    /**
      * 登陆接口
      * @param code
      * @return
      */
     @ApiOperation(value = "微信登陆" , response = Map.class)
     @RequestMapping(value = "login", method = RequestMethod.GET)
-    public ResultList loginController(@ApiParam("code") String code){
-        return null;
+    public ResultList loginController(@ApiParam("code") String code) throws Exception {
+        return login.WxLogin(code);
     }
 
     /**
@@ -57,9 +48,17 @@ public class LoginController {
     @ApiOperation(value = "微信登陆" , response = Map.class)
     @RequestMapping(value = "loginbyuser", method = RequestMethod.GET)
     public ResultList loginbyuserController(@ApiParam("username") String username,
-                                      @ApiParam("password") String password){
-        return null;
+                                      @ApiParam("password") String password) throws Exception {
+        return login.WxloginByUser(username, password);
     }
+
+
+
+
+
+
+
+
 
 
     //START===================测试过滤器模拟方法============================================================/

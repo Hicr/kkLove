@@ -25,6 +25,13 @@ public interface UserService {
      */
     public Integer isExistUserService(String openid);
 
+    /**
+     * 根据用户名密码查询用户信息（登陆）
+     * @param username
+     * @param password
+     * @return
+     */
+    public User getUserByUserPwdService(String username, String password);
 
 
 }

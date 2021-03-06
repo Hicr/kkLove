@@ -1,6 +1,7 @@
 package com.wangcr.kk.web.mapper;
 
 import com.wangcr.kk.web.entity.User;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -32,5 +33,15 @@ public interface UserMapper {
     @Select("select count(1) from kk_user where openid = #{openid}")
     Integer isExistUser(@Param("openid") String openid);
 
+    /**
+     * 根据用户名密码登陆（查询用户）
+     * @param username
+     * @param password
+     * @return
+     */
+    @Select("select * from kk_user where username = #{username} and password = #{password}")
+    User getUserByUserPwd(@Param("username") String username, @Param("password") String password);
 
+//    @Insert("Insert into kk_user () values ()")
+//    User RegisterUserMapper(@Param("username") String username, @Param("password") String password);
 }

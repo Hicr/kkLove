@@ -47,5 +47,17 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    @Override
+    public User getUserByUserPwdService(String username, String password) {
+        if(StringUtils.isNotBlank(username) && StringUtils.isNotBlank(password)){
+            log.info("开始查询用户并匹配");
+            return userMapper.getUserByUserPwd(username, password);
+        }else{
+            log.error("获取用户失败, 用户名或密码缺失");
+            return null;
+        }
+
+    }
+
 
 }
